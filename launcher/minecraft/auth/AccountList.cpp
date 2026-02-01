@@ -153,7 +153,7 @@ void AccountList::addAccount(const MinecraftAccountPtr account)
 void AccountList::removeAccount(QModelIndex index)
 {
     int row = index.row();
-    if (index.isValid() && row >= 0 && row < m_accounts.size()) {w
+    if (index.isValid() && row >= 0 && row < m_accounts.size()) {
         auto& account = m_accounts[row];
         if (account == m_defaultAccount) {
             m_defaultAccount = nullptr;
